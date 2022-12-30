@@ -8,6 +8,15 @@
 </p>
 
 # Dockerized Laravel9
+
+#Building image
+
+	docker build . -t dockerized_laravel9
+
+#Running container
+
+	docker run --name laravel9-app -p 8080:80 -d dockerized_laravel9
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
