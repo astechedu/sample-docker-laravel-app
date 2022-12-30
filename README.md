@@ -9,7 +9,8 @@
 
 # Dockerized Laravel9
 
-Dockerfile
+#Dockerfile:
+
 <code>
  FROM php:8.1-apache
   RUN apt update && apt install -y \
@@ -25,7 +26,23 @@ Dockerfile
 :thumbsup:
 
 
+#docker-compose.yml
 
+<code>
+version: "3"
+services: 
+  web:
+   build: 
+    context: ./
+    dockerfile: Dockerfile
+   container_name: laravel01
+   volumes: 
+     - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
+   ports: 
+    - 8080:80
+   
+</code>
+:thumbsup:
 
 #Building image
 
