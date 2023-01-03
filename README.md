@@ -48,17 +48,18 @@ services:
 
 000-default.conf
 
-<code>
-<VirtualHost *:80>	
-	ServerAdmin webmaster@localhost
-	DocumentRoot /var/www/html/laravel9x/public
+	<code>
+	<VirtualHost *:80>	
+		ServerAdmin webmaster@localhost
+		DocumentRoot /var/www/html/laravel9x/public
 
-	ErrorLog ${APACHE_LOG_DIR}/error.log
-	CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
+		ErrorLog ${APACHE_LOG_DIR}/error.log
+		CustomLog ${APACHE_LOG_DIR}/access.log combined
+	</VirtualHost>
 
-# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
-</code>
+	#vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+	</code>
+	
 :thumbsup:
 
 
