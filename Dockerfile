@@ -10,5 +10,5 @@
    
 
   WORKDIR /var/www/html
-  COPY . .
+  COPY laravel9x ./laravel9x
   RUN chown -R www-data:www-data /var/www
